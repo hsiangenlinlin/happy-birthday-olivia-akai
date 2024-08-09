@@ -11,6 +11,8 @@ export default (parent, text) => (sketch) => {
   let secondWordPoints;
   let thirdWordPoints = [];
 
+  let fourthWordPoints;
+
   sketch.preload = () => {
     font = sketch.loadFont(fontFile);
   };
@@ -27,13 +29,18 @@ export default (parent, text) => (sketch) => {
       // I just tweaked these numbers until it "looked right", mainly trial and error :D 
       // The numbers would be different for different text, any suggestions about better way to do this are welcome :) 
       firstWordPoints = font.textToPoints(`${firstWord} ${secondWord}`, width * 0.04, height * 0.33, width * 0.12)
-      secondWordPoints = font.textToPoints(thirdWord, width * 0.05, height * 0.83, width * 0.3);
+      // secondWordPoints = font.textToPoints(thirdWord, width * 0.05, height * 0.83, width * 0.3);
+      secondWordPoints = font.textToPoints("Olivia Akai Hsieh", width * 0.05, height * 0.7, width * 0.12);
+      thirdWordPoints = [];  // Clear the third and fourth points in desktop view
+      fourthWordPoints = [];
     } else {
       // console.log('in mobile view')
 
-      firstWordPoints = font.textToPoints(firstWord, width * 0.01, height * 0.3, width * 0.3);
-      secondWordPoints = font.textToPoints(secondWord, width * 0.01, height * 0.5, width * 0.25);
-      thirdWordPoints = font.textToPoints(thirdWord, width * 0.01, height * 0.7, width * 0.32);
+      firstWordPoints = font.textToPoints(firstWord, width * 0.01, height * 0.2, width * 0.3);
+      secondWordPoints = font.textToPoints(secondWord, width * 0.01, height * 0.4, width * 0.25);
+      // thirdWordPoints = font.textToPoints(thirdWord, width * 0.01, height * 0.7, width * 0.32);
+      thirdWordPoints = font.textToPoints("Olivia", width * 0.01, height * 0.6, width * 0.32);
+      fourthWordPoints = font.textToPoints("Akai", width * 0.01, height * 0.8, width * 0.32);
     }
 
     firstWordPoints.forEach((point) => {
@@ -45,6 +52,9 @@ export default (parent, text) => (sketch) => {
     });
 
     thirdWordPoints.forEach((point) => {
+      dots.push(new Dot(point.x, point.y, sketch));
+    });
+    fourthWordPoints.forEach((point) => {
       dots.push(new Dot(point.x, point.y, sketch));
     });
   };
