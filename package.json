@@ -2,7 +2,7 @@
   "name": "happy-birthday",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gitname.github.io/happy-birthday-olivia-akai",
+  "homepage": "https://hsiangenlinlin.github.io/happy-birthday-olivia-akai",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -14,7 +14,6 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
