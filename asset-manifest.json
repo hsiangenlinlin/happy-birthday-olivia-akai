@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/happy-birthday-olivia-akai/static/css/main.e811170c.chunk.css",
+    "main.js": "/happy-birthday-olivia-akai/static/js/main.0c971f84.chunk.js",
+    "main.js.map": "/happy-birthday-olivia-akai/static/js/main.0c971f84.chunk.js.map",
+    "runtime-main.js": "/happy-birthday-olivia-akai/static/js/runtime-main.57cddddf.js",
+    "runtime-main.js.map": "/happy-birthday-olivia-akai/static/js/runtime-main.57cddddf.js.map",
+    "static/js/2.78186614.chunk.js": "/happy-birthday-olivia-akai/static/js/2.78186614.chunk.js",
+    "static/js/2.78186614.chunk.js.map": "/happy-birthday-olivia-akai/static/js/2.78186614.chunk.js.map",
+    "index.html": "/happy-birthday-olivia-akai/index.html",
+    "precache-manifest.b3079731a4114daf7204461ca6193e51.js": "/happy-birthday-olivia-akai/precache-manifest.b3079731a4114daf7204461ca6193e51.js",
+    "service-worker.js": "/happy-birthday-olivia-akai/service-worker.js",
+    "static/css/main.e811170c.chunk.css.map": "/happy-birthday-olivia-akai/static/css/main.e811170c.chunk.css.map",
+    "static/js/2.78186614.chunk.js.LICENSE.txt": "/happy-birthday-olivia-akai/static/js/2.78186614.chunk.js.LICENSE.txt",
+    "static/media/AvenirNextLTPro-Demi.otf": "/happy-birthday-olivia-akai/static/media/AvenirNextLTPro-Demi.de28f71e.otf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.57cddddf.js",
+    "static/js/2.78186614.chunk.js",
+    "static/css/main.e811170c.chunk.css",
+    "static/js/main.0c971f84.chunk.js"
+  ]
+}
